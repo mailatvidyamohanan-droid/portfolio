@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidya Mohanan — Web Developer &amp; SEO Specialist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<img src="vidya-buddy.png" alt="" aria-hidden="true" class="buddy" id="buddy">
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__mark">VM<span>.</span></a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="nav__cta">Contact</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="hero__kicker">Web development &amp; technical SEO</p>
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:0">I build websites</span>
+        <span class="reveal" style="--d:1">that <span class="underline-swipe">rank</span> as well</span>
+        <span class="reveal" style="--d:2">as they look.</span>
+      </h1>
+      <p class="hero__sub reveal" style="--d:3">
+        Web developer with experience creating responsive CMS websites, business websites and SEO-focused digital experiences using PHP, CodeIgniter, WordPress and modern frontend technologies.
+      </p>
+      <div class="hero__actions reveal" style="--d:4">
+        <a href="#work" class="btn btn--solid">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Let's connect</a>
+      </div>
+      <div class="hero__tags reveal" style="--d:5">
+        <div class="hero__tag">
+          <span class="hero__tag-dot hero__tag-dot--indigo"></span>
+          Web Development <em>PHP · CI · JS</em>
+        </div>
+        <div class="hero__tag">
+          <span class="hero__tag-dot hero__tag-dot--amber"></span>
+          SEO <em>Technical · On-page</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__stage" id="heroStage">
+      <div class="hero__perspective" id="heroPerspective">
+
+        <!-- centered character — the anchor of the hero composition -->
+        <div class="hero__figure">
+          <img src="vidya-buddy.png" alt="Vidya, working on a laptop" class="hero__figure-img">
+        </div>
+
+        <!-- floating tech chips -->
+        <div class="chip chip--1" data-depth="18">JS</div>
+        <div class="chip chip--2" data-depth="30">PHP</div>
+        <div class="chip chip--3" data-depth="12">WP</div>
+        <div class="chip chip--4" data-depth="24">CI</div>
+
+        <!-- panel: search / ranking -->
+        <div class="panel panel--seo" data-depth="10">
+          <svg viewBox="0 0 220 150" class="panel__svg">
+            <rect x="1" y="1" width="218" height="148" rx="14" class="panel__bg"/>
+            <circle cx="86" cy="66" r="30" class="seo__lens"/>
+            <line x1="108" y1="88" x2="132" y2="112" class="seo__handle"/>
+            <path d="M20 120 L52 96 L78 108 L112 62 L146 78 L188 30" class="seo__spark"/>
+            <circle cx="188" cy="30" r="5" class="seo__dot"/>
+            <text x="20" y="24" class="panel__label">RANKING ↑</text>
+          </svg>
+        </div>
+
+        <!-- panel: code editor -->
+        <div class="panel panel--code" data-depth="26">
+          <svg viewBox="0 0 240 160" class="panel__svg">
+            <rect x="1" y="1" width="238" height="158" rx="14" class="panel__bg panel__bg--dark"/>
+            <circle cx="20" cy="18" r="4" class="dot dot--r"/>
+            <circle cx="34" cy="18" r="4" class="dot dot--y"/>
+            <circle cx="48" cy="18" r="4" class="dot dot--g"/>
+            <text x="20" y="48" class="code__line code__line--kw">function</text>
+            <text x="92" y="48" class="code__line code__line--fn">build</text>
+            <text x="20" y="70" class="code__line code__line--tag">&lt;Website</text>
+            <text x="20" y="92" class="code__line code__line--attr">seo=</text>
+            <text x="58" y="92" class="code__line code__line--str">"fast"</text>
+            <text x="20" y="114" class="code__line code__line--attr">cms=</text>
+            <text x="58" y="114" class="code__line code__line--str">"php"</text>
+            <text x="20" y="136" class="code__line code__line--tag">/&gt;</text>
+            <rect x="20" y="142" width="10" height="14" class="code__cursor"/>
+          </svg>
+        </div>
+
+        <!-- panel: browser / layout -->
+        <div class="panel panel--browser" data-depth="6">
+          <svg viewBox="0 0 260 170" class="panel__svg">
+            <rect x="1" y="1" width="258" height="168" rx="14" class="panel__bg"/>
+            <rect x="1" y="1" width="258" height="26" rx="14" class="browser__bar"/>
+            <circle cx="18" cy="14" r="3.5" class="dot dot--r"/>
+            <circle cx="30" cy="14" r="3.5" class="dot dot--y"/>
+            <circle cx="42" cy="14" r="3.5" class="dot dot--g"/>
+            <rect x="66" y="8" width="150" height="12" rx="6" class="browser__url"/>
+            <rect x="20" y="42" width="90" height="10" rx="3" class="browser__block browser__block--dark"/>
+            <rect x="20" y="60" width="140" height="6" rx="3" class="browser__block"/>
+            <rect x="20" y="72" width="120" height="6" rx="3" class="browser__block"/>
+            <rect x="20" y="94" width="66" height="52" rx="6" class="browser__card"/>
+            <rect x="96" y="94" width="66" height="52" rx="6" class="browser__card"/>
+            <rect x="172" y="94" width="66" height="52" rx="6" class="browser__card"/>
+            <rect x="20" y="94" width="66" height="18" rx="6" class="browser__card-fill"/>
+          </svg>
+        </div>
+
+      </div>
+      <div class="hero__glow"></div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about">
+  <div class="section__inner about__grid">
+    <div class="about__copy reveal-io">
+      <h2 class="section__title">A developer who thinks beyond code.</h2>
+      <p class="section__lede">
+        I combine development, design implementation and SEO to build websites that look professional and are easier to discover.
+      </p>
+      <p class="section__body">
+        I work on theme-based CMS websites, custom PHP/CodeIgniter projects and WordPress websites. My work also includes technical SEO, metadata, schema, responsive interfaces, performance improvements and website maintenance.
+      </p>
+      <p class="section__body">
+        I enjoy turning a design or business requirement into a practical, responsive website that is easy to maintain.
+      </p>
+    </div>
+    <div class="about__facts reveal-io">
+      <div class="fact">
+        <span class="fact__label">Education</span>
+        <span class="fact__value">MCA</span>
+      </div>
+      <div class="fact">
+        <span class="fact__label">Focus</span>
+        <span class="fact__value">Web + SEO</span>
+      </div>
+      <div class="fact">
+        <span class="fact__label">Experience</span>
+        <span class="fact__value">Professional</span>
+      </div>
+      <div class="fact">
+        <span class="fact__label">Based in</span>
+        <span class="fact__value">Kerala, India</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills section" id="skills">
+  <div class="section__inner">
+    <h2 class="section__title reveal-io">Tools I work with.</h2>
+    <p class="section__lede reveal-io">Grouped by where they show up in a project — from first line of code to first page of search results.</p>
+
+    <div class="skill-groups">
+      <div class="skill-group reveal-io">
+        <h3 class="skill-group__title">Frontend</h3>
+        <div class="skill-chips">
+          <span class="skill-chip">HTML5</span>
+          <span class="skill-chip">CSS3</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">Bootstrap</span>
+          <span class="skill-chip">React</span>
+          <span class="skill-chip">Next.js</span>
+          <span class="skill-chip">GSAP</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-io">
+        <h3 class="skill-group__title">Backend &amp; CMS</h3>
+        <div class="skill-chips">
+          <span class="skill-chip">PHP</span>
+          <span class="skill-chip">MySQL</span>
+          <span class="skill-chip">CodeIgniter</span>
+          <span class="skill-chip">WordPress</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-io">
+        <h3 class="skill-group__title">SEO &amp; Analytics</h3>
+        <div class="skill-chips">
+          <span class="skill-chip">Technical SEO</span>
+          <span class="skill-chip">On-page SEO</span>
+          <span class="skill-chip">Google Search Console</span>
+          <span class="skill-chip">Google Analytics</span>
+          <span class="skill-chip">Google Tag Manager</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="work section" id="work">
+  <div class="section__inner">
+    <div class="work__head reveal-io">
+      <h2 class="section__title">Projects that solve real problems.</h2>
+      <p class="section__lede">Replace these sample cards with your live projects, screenshots and case studies.</p>
+    </div>
+
+    <div class="work__grid">
+      <article class="work-card reveal-io" data-tilt>
+        <div class="work-card__tag">CMS</div>
+        <h3 class="work-card__title">Business CMS Website</h3>
+        <p class="work-card__desc">Responsive company website with reusable CMS sections, dynamic pages and SEO-friendly structure.</p>
+        <div class="work-card__stack">
+          <span>CodeIgniter</span><span>PHP</span><span>MySQL</span>
+        </div>
+      </article>
+
+      <article class="work-card reveal-io" data-tilt>
+        <div class="work-card__tag work-card__tag--amber">SEO</div>
+        <h3 class="work-card__title">SEO Growth Project</h3>
+        <p class="work-card__desc">Technical and on-page SEO work covering keywords, metadata, schema, internal linking and Search Console.</p>
+        <div class="work-card__stack">
+          <span>SEO</span><span>Schema</span><span>GSC</span>
+        </div>
+      </article>
+
+      <article class="work-card reveal-io" data-tilt>
+        <div class="work-card__tag">WEB</div>
+        <h3 class="work-card__title">Responsive Business UI</h3>
+        <p class="work-card__desc">Modern responsive interface focused on clean layouts, mobile usability and conversion-focused sections.</p>
+        <div class="work-card__stack">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="experience section" id="experience">
+  <div class="section__inner">
+    <h2 class="section__title reveal-io">Professional journey.</h2>
+
+    <div class="timeline">
+      <div class="timeline__item reveal-io">
+        <div class="timeline__marker"></div>
+        <span class="timeline__date">Jul 2024 — Present</span>
+        <h3 class="timeline__role">Web Developer · Zayn Technology</h3>
+        <p class="timeline__desc">Developing and maintaining responsive CMS and business websites, implementing SEO-friendly structures, updating content and handling technical website requirements.</p>
+      </div>
+      <div class="timeline__item reveal-io">
+        <div class="timeline__marker"></div>
+        <span class="timeline__date">Ongoing</span>
+        <h3 class="timeline__role">SEO &amp; Website Projects</h3>
+        <p class="timeline__desc">Working across technical SEO, keyword optimization, metadata, schema, content improvements, rankings and website performance for business websites.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services section" id="services">
+  <div class="section__inner">
+    <h2 class="section__title reveal-io">What I can help with.</h2>
+
+    <div class="services__grid">
+      <div class="service-card reveal-io">
+        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none">
+          <rect x="5" y="9" width="38" height="28" rx="4"/>
+          <path d="M5 16h38"/>
+          <circle cx="11" cy="12.5" r="1.2" fill="currentColor" stroke="none"/>
+          <circle cx="15" cy="12.5" r="1.2" fill="currentColor" stroke="none"/>
+          <path d="M17 27l-5 4 5 4M31 27l5 4-5 4M26 24l-4 12"/>
+        </svg>
+        <h3 class="service-card__title">Website Development</h3>
+        <p class="service-card__desc">Responsive business and CMS websites built for usability, maintainability and SEO.</p>
+      </div>
+
+      <div class="service-card reveal-io">
+        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none">
+          <rect x="7" y="6" width="34" height="36" rx="4"/>
+          <path d="M7 16h34"/>
+          <path d="M14 24h9M14 30h14M14 36h6"/>
+        </svg>
+        <h3 class="service-card__title">CMS Development</h3>
+        <p class="service-card__desc">Custom PHP/CodeIgniter and WordPress implementations with dynamic content management.</p>
+      </div>
+
+      <div class="service-card reveal-io">
+        <svg class="service-card__icon" viewBox="0 0 48 48" fill="none">
+          <circle cx="21" cy="21" r="13"/>
+          <path d="M30 30l10 10"/>
+          <path d="M15 22l4-5 4 3 6-8"/>
+        </svg>
+        <h3 class="service-card__title">SEO</h3>
+        <p class="service-card__desc">Technical, on-page and content-focused SEO designed to improve visibility and organic growth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact">
+  <div class="section__inner contact__inner reveal-io">
+    <p class="section__kicker">Have a project in mind?</p>
+    <h2 class="contact__title">Let's work together.</h2>
+    <p class="section__lede">I'm open to web development, website maintenance and SEO opportunities.</p>
+
+    <div class="contact__links">
+      <a href="mailto:diyamohan65@gmail.com" class="contact__link">
+        diyamohan65@gmail.com
+      </a>
+      <a href="https://www.linkedin.com/in/vidya-mohanan-b305aa379/" target="_blank" rel="noopener" class="contact__link">
+        linkedin.com/in/vidya-mohanan
+      </a>
+    </div>
+
+    <p class="contact__location">Kerala, India</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section__inner footer__inner">
+    <span>Vidya Mohanan</span>
+    <span>&copy; <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
